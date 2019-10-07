@@ -1,9 +1,9 @@
 <template>
-  <div class="row homeComponent">
-    <div class="col-12">
+  <div class="row homeComponent justify-content-center">
+    <div class="col-12 title">
       <h1>My Wishlist</h1>
     </div>
-    <div class="col-6">
+    <div class="col-6 info">
       <!-- Login -->
       <form v-if="loginForm" @submit.prevent="loginUser">
         <div class="form-group">
@@ -75,4 +75,19 @@ export default {
 
 
 <style scoped>
+h1 {
+  /* font-family: "Great Vibes", cursive; */
+  font-family: "Dancing Script", cursive;
+}
+p {
+  font-family: "Courgette", cursive;
+}
+.title {
+  min-height: 20vh;
+  background-color: aqua;
+}
+.info {
+  min-height: 50vh;
+  background-color: blueviolet;
+}
 </style>
